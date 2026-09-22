@@ -12,20 +12,21 @@
 
 ## Overview
 
-Pasifika Token (PASI) is an ERC-20 utility token designed specifically for Pacific Islander communities and their diaspora. PASI runs natively on the **Pasifika Data Chain** (Chain ID: 999888) for zero-gas community transfers.
+Pasifika Token (PASI) is the native token of the Pasifika ecosystem, an ERC-20 utility token designed specifically for Pacific Islander communities and their diaspora. PASI is **dual-deployed** on the **Pasifika Data Chain** (Chain ID: 999888) for zero-gas community transfers and **Arbitrum One** (Chain ID: 42161) to unlock low-cost remittances and public liquidity.
 
 - **Low cost remittances** - Only 0.5% fee vs 5-15% traditional services
 - **Community governance** - Role based access control with validator organizations
 - **Financial inclusion** - Simple token transfers without traditional banking barriers
+- **Public liquidity** - PASI/USDC Uniswap v2 pool on Arbitrum One for open-market access
 - **Global cross border portability** - Works across US, New Zealand, Australia, Pacific Islands, EU, Russia, Asia, Africa, Arctic, Antarctica, and Middle East
 
 ## Latest Developments (January 2026)
 
 - ✅ **Contracts verified on Sourcify** (PasifikaToken + PasifikaTreasury)
-- 🔄 **Arbitrum One deployment planned** - Contract deployed at `0xf5dd879f1d6249D651E326777585449E45A5E418` but not yet active
-- 🔄 **Public DEX liquidity** - PASI/USDC Uniswap v2 pool on Arbitrum planned
+- ✅ **Arbitrum One deployment live** - Token at [`0xf5dd879f1d6249D651E326777585449E45A5E418`](https://arbiscan.io/token/0xf5dd879f1d6249D651E326777585449E45A5E418), Treasury at [`0xd9588c83a4C42c4630694765f11A1fB012a60aCc`](https://arbiscan.io/address/0xd9588c83a4C42c4630694765f11A1fB012a60aCc)
+- ✅ **Public DEX liquidity live** - PASI/USDC Uniswap v2 pool on Arbitrum, inaugural liquidity at $0.05/PASI
 
-> PASI operates on the Pasifika Data Chain for zero-gas community transfers. Arbitrum One deployment is planned for future public-market liquidity and DEX access.
+> PASI operates on the Pasifika Data Chain for zero-gas community transfers, and on Arbitrum One for public-market liquidity and DEX access.
 
 ## Token Specifications
 
@@ -37,7 +38,9 @@ Pasifika Token (PASI) is an ERC-20 utility token designed specifically for Pacif
 | **Max Supply** | 1,000,000,000 (1 billion) |
 | **Initial Supply** | 100,000,000 (100 million) |
 | **Standard** | ERC-20 |
-| **Network** | Pasifika Data Chain (Chain ID 999888) |
+| **Networks** | Pasifika Data Chain (Chain ID 999888), Arbitrum One (Chain ID 42161) |
+| **Arbitrum Token** | [`0xf5dd879f1d6249D651E326777585449E45A5E418`](https://arbiscan.io/token/0xf5dd879f1d6249D651E326777585449E45A5E418) |
+| **Arbitrum Treasury** | [`0xd9588c83a4C42c4630694765f11A1fB012a60aCc`](https://arbiscan.io/address/0xd9588c83a4C42c4630694765f11A1fB012a60aCc) |
 | **Remittance Fee** | 0.5% (configurable, max 5%) |
 
 ## Features
@@ -293,8 +296,10 @@ MIT License - see [LICENSE](LICENSE)
 
 - **Pasifika Data Chain Repo**: [Pasifika Data Chain](https://github.com/EdwinLiavaa/pasifika-poa-chain)
 - **Whitepaper**: [WHITEPAPER](./docs/WHITEPAPER.md)
-- **Website**: https://pasifika.xyz
-- **Contact**: edwin@pasifika.xyz
+- **Website**: https://forge-digital-transformation.com/pasi-token.html
+- **Trade on Uniswap**: [PASI on Arbitrum One](https://app.uniswap.org/swap?chain=arbitrum&outputCurrency=0xf5dd879f1d6249D651E326777585449E45A5E418)
+- **View on Arbiscan**: [PASI Token](https://arbiscan.io/token/0xf5dd879f1d6249D651E326777585449E45A5E418)
+- **Contact**: info@forge-digital-transformation.com
 
 ---
 
