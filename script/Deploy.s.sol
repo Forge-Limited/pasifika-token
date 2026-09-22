@@ -14,7 +14,7 @@ import "../src/PasifikaTreasury.sol";
  *   cast wallet import pasifika-deployer --interactive
  * 
  * Deploy:
- *   forge script script/Deploy.s.sol --rpc-url https://rpc.pasifika.xyz --account pasifika-deployer --broadcast
+ *   DEPLOYER_ADDRESS=<keystore_address> forge script script/Deploy.s.sol:DeployPasifikaToken --rpc-url https://rpc.pasifika.xyz --account pasifika-deployer --broadcast
  */
 contract DeployPasifikaToken is Script {
     // Initial supply: 100 million tokens (10% of max supply)
@@ -29,8 +29,9 @@ contract DeployPasifikaToken is Script {
             deployer = vm.addr(deployerPrivateKey);
             vm.startBroadcast(deployerPrivateKey);
         } else {
-            // When using --account flag, use tx.origin as deployer
-            deployer = tx.origin;
+            // When using --account flag, set DEPLOYER_ADDRESS to the keystore address
+            // (tx.origin remains the foundry DefaultSender, not the signing account)
+            deployer = vm.envOr("DEPLOYER_ADDRESS", tx.origin);
             vm.startBroadcast();
         }
         

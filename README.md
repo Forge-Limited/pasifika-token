@@ -39,6 +39,8 @@ Pasifika Token (PASI) is the native token of the Pasifika ecosystem, an ERC-20 u
 | **Initial Supply** | 100,000,000 (100 million) |
 | **Standard** | ERC-20 |
 | **Networks** | Pasifika Data Chain (Chain ID 999888), Arbitrum One (Chain ID 42161) |
+| **Pasifika Token** | `0x6ff4B52E40b75d45BF2eB9c4CAd67d1198706756` |
+| **Pasifika Treasury** | `0x1205648e5f4A3f85DbE3300D57ebA15787DB1232` |
 | **Arbitrum Token** | [`0xf5dd879f1d6249D651E326777585449E45A5E418`](https://arbiscan.io/token/0xf5dd879f1d6249D651E326777585449E45A5E418) |
 | **Arbitrum Treasury** | [`0xd9588c83a4C42c4630694765f11A1fB012a60aCc`](https://arbiscan.io/address/0xd9588c83a4C42c4630694765f11A1fB012a60aCc) |
 | **Remittance Fee** | 0.5% (configurable, max 5%) |
