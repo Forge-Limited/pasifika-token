@@ -20,8 +20,9 @@ Pasifika Token (PASI) is the native token of the Pasifika ecosystem, an ERC-20 u
 - **Public liquidity** - PASI/USDC Uniswap v2 pool on Arbitrum One for open-market access
 - **Global cross border portability** - Works across US, New Zealand, Australia, Pacific Islands, EU, Russia, Asia, Africa, Arctic, Antarctica, and Middle East
 
-## Latest Developments (January 2026)
+## Latest Developments (September 2026)
 
+- ✅ **Pasifika Data Chain deployment live** - Token at `0x6ff4B52E40b75d45BF2eB9c4CAd67d1198706756`, Treasury at `0x1205648e5f4A3f85DbE3300D57ebA15787DB1232`
 - ✅ **Contracts verified on Sourcify** (PasifikaToken + PasifikaTreasury)
 - ✅ **Arbitrum One deployment live** - Token at [`0xf5dd879f1d6249D651E326777585449E45A5E418`](https://arbiscan.io/token/0xf5dd879f1d6249D651E326777585449E45A5E418), Treasury at [`0xd9588c83a4C42c4630694765f11A1fB012a60aCc`](https://arbiscan.io/address/0xd9588c83a4C42c4630694765f11A1fB012a60aCc)
 - ✅ **Public DEX liquidity live** - PASI/USDC Uniswap v2 pool on Arbitrum, inaugural liquidity at $0.05/PASI
