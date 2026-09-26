@@ -37,7 +37,7 @@ Pasifika Token (PASI) is the native token of the Pasifika ecosystem, an ERC-20 u
 | **Symbol** | PASI |
 | **Decimals** | 18 |
 | **Max Supply** | 1,000,000,000 (1 billion) |
-| **Initial Supply** | 100,000,000 (100 million) |
+| **Initial Supply** | 100,000,000 (Pasifika Data Chain); 10,000,000 (Arbitrum One) |
 | **Standard** | ERC-20 |
 | **Networks** | Pasifika Data Chain (Chain ID 999888), Arbitrum One (Chain ID 42161) |
 | **Pasifika Token** | `0x6ff4B52E40b75d45BF2eB9c4CAd67d1198706756` |
@@ -282,7 +282,10 @@ pasifika-token/
 │   ├── PasifikaToken.sol      # Main token contract
 │   └── PasifikaTreasury.sol   # Treasury & governance contract
 ├── script/
-│   └── Deploy.s.sol           # Deployment scripts
+│   ├── Deploy.s.sol           # Pasifika Data Chain deployment
+│   └── DeployEthereum.s.sol   # Ethereum/L2 deployment
+├── docs/
+│   └── WHITEPAPER.md          # Project whitepaper
 ├── test/
 │   └── PasifikaToken.t.sol    # Unit tests (38 tests)
 ├── lib/                        # Dependencies (forge-std, openzeppelin)

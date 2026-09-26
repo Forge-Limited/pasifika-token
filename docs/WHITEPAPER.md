@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-Version 1.0 | January 2026
+Version 1.1 | September 2026
 </p>
 
 ---
@@ -111,8 +111,11 @@ A Proof-of-Authority (PoA) blockchain optimized for Pacific community use:
 - **Chain ID**: 999888
 - **Consensus**: Clique PoA
 - **Block Time**: ~5 seconds
-- **Gas Fees**: Zero (subsidized by validators)
+- **Gas Fees**: Negligible (~1 gwei, subsidized by validators)
 - **RPC Endpoint**: https://rpc.pasifika.xyz
+- **Token Address**: `0x6ff4B52E40b75d45BF2eB9c4CAd67d1198706756`
+- **Treasury Address**: `0x1205648e5f4A3f85DbE3300D57ebA15787DB1232`
+- **Initial Supply**: 100,000,000 PASI
 
 ### 3.3 Arbitrum One Deployment
 
@@ -121,21 +124,23 @@ To provide public DEX liquidity, institutional integrations, and transparent pri
 - **Chain ID**: 42161
 - **Token Address**: `0xf5dd879f1d6249D651E326777585449E45A5E418`
 - **Treasury Address**: `0xd9588c83a4C42c4630694765f11A1fB012a60aCc`
+- **Initial Supply**: 10,000,000 PASI
 - **Verification**: Both contracts verified via Sourcify
 - **DEX Liquidity**: PASI/USDC Uniswap v2 pool live with inaugural liquidity at $0.05/PASI (20 PASI = 1 USDC)
 
-### 3.4 Public Deployment Status (January 2026)
+### 3.4 Public Deployment Status (September 2026)
 
 | Component | Status |
 |-----------|--------|
-| PasifikaToken.sol | ✅ Deployed on Pasifika Data Chain + Arbitrum One |
-| PasifikaTreasury.sol | ✅ Active on Arbitrum and linked to token |
+| PasifikaToken.sol | ✅ Live on Pasifika Data Chain + Arbitrum One |
+| PasifikaTreasury.sol | ✅ Live on both chains and linked to token |
+| Admin Wallet | `0xE1a0Ae0FC16CfC6ABf251c9e7FCf6b6B9bde9aAA` governs both deployments |
 | Sourcify Verification | ✅ Token & Treasury verified |
 | Arbiscan Metadata | 🔄 Logo + description submission in progress |
 | Liquidity | ✅ PASI/USDC Uniswap v2 (Arbitrum) |
-| Community Chain | ✅ Zero-gas transfers via Pasifika Data Chain validators |
+| Community Chain | ✅ Low-cost transfers via Pasifika Data Chain validators |
 
-### 3.3 Core Components
+### 3.5 Core Components
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -217,7 +222,7 @@ A future bridge module is planned to allow seamless migration of liquidity/minte
 | `PAUSER_ROLE` | Emergency pause/unpause | Security committee |
 | `VALIDATOR_ROLE` | Vote on treasury distributions | Community organizations |
 
-### 4.3 Security Features
+### 4.4 Security Features
 
 - **ReentrancyGuard**: Protects treasury distributions
 - **Custom Errors**: Gas efficient error handling
@@ -237,7 +242,7 @@ A future bridge module is planned to allow seamless migration of liquidity/minte
 | **Symbol** | PASI |
 | **Decimals** | 18 |
 | **Max Supply** | 1,000,000,000 (1 billion) |
-| **Initial Supply** | 100,000,000 (100 million) |
+| **Initial Supply** | 100,000,000 on Pasifika Data Chain; 10,000,000 on Arbitrum One |
 | **Standard** | ERC-20 |
 
 ### 5.2 Token Distribution & Deployment Addresses
@@ -253,6 +258,11 @@ A future bridge module is planned to allow seamless migration of liquidity/minte
 │  Team & Advisors        │ 10%  │ 10,000,000   │
 └────────────────────────────────────────────────┘
 ```
+
+| Network | Token Contract | Treasury Contract | Initial Supply |
+|---------|----------------|-------------------|----------------|
+| Pasifika Data Chain (999888) | `0x6ff4B52E40b75d45BF2eB9c4CAd67d1198706756` | `0x1205648e5f4A3f85DbE3300D57ebA15787DB1232` | 100,000,000 |
+| Arbitrum One (42161) | `0xf5dd879f1d6249D651E326777585449E45A5E418` | `0xd9588c83a4C42c4630694765f11A1fB012a60aCc` | 10,000,000 |
 
 ### 5.3 Fee Structure
 
@@ -413,7 +423,7 @@ Pasifika Token employs a **Validator Based Governance** model where trusted comm
 - ✅ Arbitrum One deployment + Uniswap liquidity
 - ✅ Core documentation
 
-### Phase 2: Pilot (Q1-Q2 2026)
+### Phase 2: Pilot (2026, In Progress)
 - [ ] Mobile wallet MVP launch
 - [ ] Onboard 3-5 validator organizations
 - [ ] 100-500 beta users in US-Tonga corridor
@@ -442,7 +452,7 @@ Pasifika Token employs a **Validator Based Governance** model where trusted comm
 **Edwin Liava'a** - Founder & Lead Developer
 - Pacific Islander advocate
 - Blockchain security researcher
-- Contact: edwin@pasifika.xyz
+- Contact: edwin@forge-digital-transformation.com
 
 ### 10.2 Advisory Board
 
@@ -517,9 +527,9 @@ Success requires balancing technological capability with community needs, legal 
 
 ## Contact
 
-**Website**: https://pasifika.xyz  
-**Email**: edwin@pasifika.xyz  
-**GitHub**: https://github.com/Pasifika-Web3-Tech-Hub/pasifika-token
+**Website**: https://forge-digital-transformation.com/pasi-token.html  
+**Email**: info@forge-digital-transformation.com  
+**GitHub**: https://github.com/Forge-Limited/pasifika-token
 
 ---
 
